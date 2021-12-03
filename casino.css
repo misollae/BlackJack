@@ -1,0 +1,178 @@
+body{
+  background-image: url("./imagens/fundo5.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 span {
+  font-family: 'Rye', cursive;
+  font-size: bold;
+  color: #dbc198;
+  height: 320px;
+  top: 20px;
+  right: 49%;
+  margin-bottom: 20%;
+  position: absolute;
+  transform-origin: bottom center;
+}
+
+.char0 {transform: rotate(-30deg);}
+.char1 {transform: rotate(-24deg);}
+.char2 {transform: rotate(-18deg);}
+.char3 {transform: rotate(-12deg);}
+.char4 {transform: rotate(-6deg);}
+.char6 {transform: rotate(6deg);}
+.char7 {transform: rotate(12deg);}
+.char8 {transform: rotate(18deg);}
+.char9 {transform: rotate(24deg);}
+.char10 {transform: rotate(30deg);}
+
+.casino{
+  font-family: 'Sawarabi Mincho', cursive;
+  position: relative;
+  color: #ccad7b;
+  font-weight: 700;
+  top: 65px;
+  text-align: center;
+}
+
+h3,h5 {
+  font-family: 'Sawarabi Mincho', cursive;
+  color: #dbc198;
+}
+
+#dealer, #player {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  #cardbttn{
+    display: inline-block !important;
+   }
+   .meaning{
+    background-color: rgb(61, 8, 8) !important;
+    z-index: 1 !important;
+   }
+}
+
+.meaning{
+  background-color: rgba(61, 8, 8, 0.473);
+  text-align: left;
+  font-weight: 500;
+  border-radius: 10px;
+  color: #ccad7b;
+  position: absolute;
+  left: 2%;
+  top: 6.2%;
+  padding: 10px;
+  vertical-align: middle; 
+  visibility: hidden;
+}
+
+#deck:hover .carta.stack:last-of-type{
+  top: 35px;
+  left: 30px;
+  transform:rotate(9deg) !important;
+}
+
+#cardbttn {
+  font-family: 'Sawarabi Mincho', cursive;
+  background-color: #701111;
+  color: #ccad7b;
+  border-color: #ccad7b;
+  display: none;
+}
+#stand, #confirmBet{
+  font-family: 'Sawarabi Mincho', cursive;
+  background-color: #701111;
+  color: #ccad7b;
+  border-color: #ccad7b;
+  display: inline-block;
+}
+#help{
+  font-family: 'Sawarabi Mincho', cursive;
+  background-color: #701111;
+  color: #ccad7b;
+  border-color: #ccad7b;
+  position: absolute;
+  left: 1%;
+  top: 1.5%;
+  cursor: help;
+}
+
+#help:hover ~ .meaning{
+  visibility: visible;
+}
+#new_game {
+  font-family: 'Sawarabi Mincho', cursive;
+  background-color: #701111;
+  color: #ccad7b;
+  border-color: #ccad7b;
+  position: absolute;
+  right: 1%;
+  top: 1.5%;
+}
+#continue {
+  font-family: 'Sawarabi Mincho', cursive;
+  background-color: #701111;
+  color: #ccad7b;
+  border-color: #ccad7b;
+  position: absolute;
+  right: 1%;
+  top: 6.5%;
+}
+#howToPlay {
+  font-family: 'Sawarabi Mincho', cursive;
+  background-color: #3c0404;
+  color: #bb4e4e;
+  border-color: #852727;
+  position: absolute;
+  left: 1%;
+  top: 1.5%;
+}
+button:disabled {
+  opacity: 0.4;
+}
+
+#deck {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+
+.imageChip{
+  width: 5.7vh;
+  height: 5.7vh;
+}
+
+.carta:hover, .imageChip:hover{
+  transform: rotate(6deg);
+}
+
+.carta{
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 163px;
+  width: 115px;
+  display: inline-block;
+  margin: 5px;
+  background-color: white;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  border-color: whitesmoke;
+  transition: all 1s ease-in-out;
+  }
+
+.stack{
+  position: absolute;
+  top: 0;
+  left:0;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  border-color: whitesmoke;
+}
+
+.image{
+  height: 100%;
+  width: 100%;
+  }
